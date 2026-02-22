@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Healthcare AI - PulseX</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>PulseX Healthcare AI</h1>
+
+<p>
+PulseX Healthcare AI analyzes symptoms and provides possible causes,
+recommendations and emergency alerts.
+</p>
+
+<div>
+  <button onclick="openWhatsApp()">Chat on WhatsApp</button>
+  <button onclick="openTelegram()">Chat on Telegram</button>
+  <button onclick="showChat()">Chat on Website</button>
+</div>
+
+<div id="chatBox" style="display:none; margin-top:20px;">
+  <textarea id="symptoms" placeholder="Enter your symptoms"></textarea>
+  <button onclick="analyze()">Analyze</button>
+  <div id="result"></div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
